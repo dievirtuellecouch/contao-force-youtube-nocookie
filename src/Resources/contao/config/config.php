@@ -8,5 +8,5 @@ $currentRequest = System::getContainer()->get('request_stack')->getCurrentReques
 $isBackendRequest = $scopeMatcher->isBackendRequest($currentRequest);
 
 if ($isBackendRequest) {
-    $GLOBALS['TL_CSS'][] = 'bundles/forceyoutubenocookie/backend.js|static';
+    $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/forceyoutubenocookie/backend.js|static';
 }
