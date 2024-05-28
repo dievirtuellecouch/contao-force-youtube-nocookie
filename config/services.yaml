@@ -6,3 +6,6 @@ services:
 
   DVC\ForceYoutubeNocookie\:
     resource: ../src
+
+  DVC\ForceYoutubeNocookie\EventListener\DataContainer\ContentCallbackListener:
+    public: true

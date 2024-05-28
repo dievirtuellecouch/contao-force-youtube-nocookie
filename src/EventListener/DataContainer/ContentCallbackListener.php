@@ -1,6 +1,6 @@
 <?php
 
-namespace App\ForceYoutubeNocookie\EventListener\DataContainer;
+namespace DVC\ForceYoutubeNocookie\EventListener\DataContainer;
 
 use Contao\DataContainer;
 use Contao\StringUtil;
