@@ -1,0 +1,25 @@
+{
+    "name": "dvc/contao-force-youtube-nocookie",
+    "description": "Forces the usage of YouTube’s nocookie domain in Contao’s YouTube content element.",
+    "type": "contao-bundle",
+    "version": "0.5.0",
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^4.13"
+    },
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Jonathan Hermann",
+            "email": "jh@d-v-c.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DVC\\ForceYoutubeNocookie\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "DVC\\ForceYoutubeNocookie\\ContaoManager\\Plugin"
+    }
+}
