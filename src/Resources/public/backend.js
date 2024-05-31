@@ -6,6 +6,7 @@
         }
     
         checkbox.disabled = true;
+        checkbox.checked = true;
     }
 
     if (document.readyState === 'interactive' || document.readyState === 'complete' ) {
