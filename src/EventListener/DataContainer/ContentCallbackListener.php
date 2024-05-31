@@ -2,6 +2,7 @@
 
 namespace DVC\ForceYoutubeNocookie\EventListener\DataContainer;
 
+use Contao\CoreBundle\DependencyInjection\Attribute\AsCallback;
 use Contao\DataContainer;
 use Contao\StringUtil;
 
