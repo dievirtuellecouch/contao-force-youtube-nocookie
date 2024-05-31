@@ -12,15 +12,6 @@ class ContentCallbackListener
 
     #[AsCallback(
         table: 'tl_content',
-        target: 'fields.youtubeOptions.load',
-    )]
-    public function onYoutubeOptionsLoad(mixed $options, DataContainer $dataContainer): mixed
-    {
-        return $this->addNocookieToOptions($options);
-    }
-
-    #[AsCallback(
-        table: 'tl_content',
         target: 'fields.youtubeOptions.save',
     )]
     public function onYoutubeOptionsSave(mixed $options, DataContainer $dataContainer): mixed
