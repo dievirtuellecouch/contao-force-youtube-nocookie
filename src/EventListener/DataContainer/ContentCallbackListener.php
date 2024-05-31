@@ -14,21 +14,21 @@ class ContentCallbackListener
         table: 'tl_content',
         target: 'fields.youtubeOptions.save',
     )]
-    public function onYoutubeOptionsSave(mixed $options, DataContainer $dataContainer): mixed
+    public function onYoutubeOptionsSave(?string $options, DataContainer $dataContainer): array
     {
         return $this->addNocookieToOptions($options);
     }
 
-    private function addNocookieToOptions(mixed $options): array
+    private function addNocookieToOptions(?string $options): array
     {
-        $options = StringUtil::deserialize($value);
+        $options = StringUtil::deserialize($options);
 
         if ($options === null) {
             $options = [];
         }
 
         if (\array_search(self::YOUTUBE_NOCOOKIE_VALUE, $options) === false) {
-            return \array_merge($options, [self::YOUTUBE_NOCOOKIE_VALUE]);
+            $options = \array_merge($options, [self::YOUTUBE_NOCOOKIE_VALUE]);
         }
 
         return $options;
